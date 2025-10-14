@@ -1,0 +1,30 @@
+ {% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+
+     <header>
+        
+        <img id='logo' src="{% static 'home/img/tc_logo.png' %}">
+
+        <ul class="menu">
+
+            <li><a href="{url 'inicio'}">Início</li></a>
+            <li><a href="{url 'sobre'}">Sobre</li></a>
+            <li><a href="{url 'espaco'}">Nosso espaço</li></a>
+            <li><a href="{url 'profissionais'}">Profissionais</li></a>
+            <li><a href="{url 'tratamentos'}">Tratamentos</li></a>
+            <li><a href="{url 'contato'}">Contato</li></a>
+            <li><a href="{url 'cadastro'}">Cadastre-se</li></a>
+
+        </ul>
+    </header>
+</body>
+</html>
