@@ -76,21 +76,21 @@
         
         <div id="cards">
 
-            <div id="card1">
+            <div class="card_especialidades">
                 <img src="{% static 'home/img/card1.png' %}">
                 <h2>Aparelho Ortodôntico</h2>
                 <p>O aparelho ortodôntico ou aparelho dentário, muito conhecido por sua função estética, é um dispositivo que estimula as movimentações dos dentes. O objetivo principal do aparelho é proporcionar um melhor encaixe da mordida, a fim de prevenir problemas que afetam a qualidade de vida dos pacientes.</p>
                 <button id="btn_agendar">Agendar</button>
             </div>
 
-            <div id="card2">
+            <div class="card_especialidades">
                 <img src="{% static 'home/img/card2.png' %}">
                 <h2>Lente de Contato Dental</h2>
                 <p>Trata-se de um tipo de faceta de porcelana ou resina composta ultrafina, aplicada sobre a superfície frontal dos dentes para melhorar sua aparência estética. As lentes de contato dentais são utilizadas para corrigir imperfeições como manchas, descolorações, irregularidades no formato ou espaçamento entre os dentes, proporcionando um sorriso mais harmonioso e atraente</p>
                 <button id="btn_agendar">Agendar</button>
             </div>
 
-            <div id="card3">
+            <div class="card_especialidades">
                 <img src="{% static 'home/img/card3.png' %}">
                 <h2>Clareamento Dental</h2>
                 <p>O clareamento dental é um tratamento estético que remove manchas e deixa os dentes mais brancos, melhorando o sorriso. Pode ser feito em consultório, com o objetivo de melhorar a aparência dos dentes e a autoestima.</p>
@@ -100,7 +100,7 @@
         </div>
     </div>
     <div id="banner_contato">
-        <img src="{% static 'home/img/contato.png' %}">
+        <img id="fundo_contato" src="{% static 'home/img/contato.png' %}">
 
         <h1>Entre em Contato</h1>
 
@@ -108,15 +108,66 @@
 
             <div class="container_contato">
 
+                <div class="icon">
+                    <img src="{% static 'home/img/icon_endereco.png' %}">
+                    <p>Avenida Paulista, 999 Jardins,<br> São Paulo - SP,<br> 01411-000</p>
+                </div>
+
+                <div class="icon">
+                    <img src="{% static 'home/img/icon_tel.png' %}">
+                    <p>(11) 94002-8922</p>
+                </div>
+
+                <div class="icon">
+                    <img src="{% static 'home/img/icon_what.png' %}">
+                    <p>(11) 98878-4071</p>
+                </div>
+
+                <div class="icon">
+                    <img src="{% static 'home/img/icon_relogio.png' %}">
+                    <p>Seg a Sex <br>08:00 - 18:00</p>
+                </div>
+
+
+
             </div>
 
         </div>
 
     </div>
 
-    <div id="teste">
+    <div id="familia">
+        <img id="img_familia" src="{% static 'home/img/familia.png' %}">
 
+        <div id="slogan_agendar">
+            <h1>Cuidando do seu sorriso, cuidando de você!</h1>
+            <h2>Marque já sua Consulta</h2>
+            <button id="btn_agendar_familia">Agendar</button>
+
+        </div>
     </div>
+
+    <div id="local_banner">
+        <img id="paulista"  src="{% static 'home/img/paulista.png' %}" >
+
+        <div class="cards_local">
+
+            <div class="card_esquerda">
+                <h2>Localizado na privilegiada avenida paulista</h2>
+                <h3>Avenida Paulista, 999<br>Jardins, São Paulo - SP, 01411-000</h3>
+            </div> 
+
+            <div class="card_direita">
+                <h2>Agendar sua consulta</h2>
+                <h3>entre em contato no telefone abaixo para agendar a sua consulta</h3>
+
+            </div>
+        </div>
+
+         
+    </div>
+
+    <div id="te"></div>
    
 
 </body>

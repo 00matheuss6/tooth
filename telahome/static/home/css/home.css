@@ -134,59 +134,52 @@ section button{
 
 
 #banner_especialidades{
-    width: 100%;
-    height: 90vh;
+    padding: 40px 20px;
+    min-height: 90vh;
     background-color: #216966;
     text-align: center;
     color: white;
     margin-top: 7%;
 }
 #banner_especialidades h1{
-    padding-top: 2rem;
+    margin-bottom: 10px;
     font-size: 4rem;
 }
 
 #banner_especialidades p{
     font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
 }
 
 #cards{
     display: flex;
     justify-content: center;
-    gap: 10rem;
-    margin-top: 3rem;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0 10px;
 
 }
 
-
-#card1{
-    width: 24%;
-    height: 80vh;
+.card_especialidades{
+    flex-basis: 450px; 
+    flex-grow: 1; 
+    max-width: 450px;
+    
     background-color: #374948;
-    border-radius: 2rem;
-    color: black;
+    border-radius: 5rem;
+    padding: 20px;
+    color: white; 
+    
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 
-#card2{
-    width: 24%;
-    height: 80vh;
-    background-color: #374948;
-    border-radius: 2rem;
-   
-    color: black;
-}
-
-#card3{
-    width: 24%;
-    height: 80vh;
-    background-color: #374948;
-    border-radius: 2rem;
-  
-    color: black;
-}
 
 #btn_agendar{
-    margin-inline-end: 1.5rem;
     padding: 1.2rem 2rem;
     font-size: 1.4rem;
     background-color: #58D3CD;
@@ -196,6 +189,10 @@ section button{
     color: white;
 }
 
+#cards img{
+    width: 100%;
+    height: auto;
+}
 #cards h2{
     margin-top: 1.5rem;
     font-size: 2.6rem;
@@ -203,10 +200,12 @@ section button{
 }
 
 #cards p{
-    margin-top: 1.5rem;
-    font-size: 1.8rem;
+    padding: 2rem;
+    padding-bottom: 7rem;
+    font-size: 1.5rem;
     color: white;
 }
+
 
 
 #banner_contato{
@@ -215,9 +214,10 @@ section button{
     margin-top: 20%;
 }
 
-#banner_contato img{
+#fundo_contato{
     display: block;
     width: 100%;
+    height: 700px;
     filter: brightness(0.5);
 }
 
@@ -232,18 +232,134 @@ section button{
 
 #informacoes_contato{
     position: absolute;
-    width: 120rem;
-    height: 40rem;
+    width: 100rem;
+    height: 30rem;
     background-color:white;
     border: 8px solid #1DB7B4;
     top: 24rem;
-    left: 10%;
+    left: 8%;
     
 
 }
 
+.container_contato{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6rem;
+}
+
+.icon{
+    border-right: 2px solid #1DB7B4;
+    padding-right: 2rem;
+
+}
+
+.icon img{
+    width: 10rem;
+    height: auto;
+
+    
+}
+.icon p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
 
 
+#familia{
+    position: relative;
+    margin-top: 400px;
+}
+#slogan_agendar{
+    position: absolute;
+    top: 160px;
+    right: 100px;
+    background-color: rgba(0, 28, 53, 0.70);
+    color: white;
+    border-radius: 20px;
+    font-size: 2rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44rem;
+    height: 30rem;
+}
+
+#img_familia{
+    width: 100%;
+    height: auto;
+    filter: brightness(0.8);
+    
+    
+}
+#slogan_agendar h1{
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#slogan_agendar h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#btn_agendar_familia{
+    font-size: 1.4rem;
+    background-color: #58D3CD;
+    border: none;
+    border-radius: 7rem;
+    cursor: pointer;
+    color: white;
+    padding: 1rem 2.5rem;
+    margin-top: 4rem;
+
+}
+
+
+#local_banner{
+    margin-top: 300px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#paulista{
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7);
+    position: absolute;
+   
+    
+}
+.cards_local{
+    display: flex;
+    z-index: 10;
+    position: absolute;
+
+
+}
+
+.card_esquerda{
+   
+    
+    background-color: #75ACAE;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 30rem;
+}
+
+.card_direita{
+   
+    
+    background-color: #75ACAE;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 30rem;
+}
 
 
 
